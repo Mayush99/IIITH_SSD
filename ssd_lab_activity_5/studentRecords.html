@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Student Records</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div id="record">
+    <h2>
+      Student record Table:
+    </h2><br>
+    <table id="det">
+      <tr>
+        <td>Roll No:</td>
+        <td><input type="text" id="roll"></td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="add" value="Add New" onclick="add()"></td>
+        <td><input type="button" id="del" value="Delete Last Record" onclick="del()"></td>
+      </tr>
+    </table>
+    <br>
+    <table id="studentRec">
+      <tr>
+        <th>Roll No.</th>
+        <th>Name</th>
+      </tr>
+    </table>
+    <script type="text/javascript">
+        function add(){
+          var r = document.getElementById("roll").value;
+          var n = document.getElementById("name").value;
+        //   alert("shudhosdvjdsnv "+r+"dvbhjdbsvs "+n);
+          var stuRec = document.getElementById("studentRec");
+          var tableRow = document.createElement("tr");
+          tableRow.innerHTML = "<td>"+r+"</td><td>"+n+"</td>";
+          stuRec.appendChild(tableRow);
+        }
+          
+        function del(){
+          var list = document.getElementById("studentRec");
+          var rows = list.rows.length;
+            if(rows>1){ 
+              list.removeChild(list.lastChild);
+            }
+        }
+        </script>
+        </div>
+  </body>
+</html>

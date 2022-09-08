@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(113, 33, 33);
+    background-image: repeating-linear-gradient(to right,rgb(70, 70, 113),rgb(113, 33, 33));
+}
+#ind{
+    box-shadow: 15px 20px #888888;
+    border-radius: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-color: rgb(235, 255, 144);
+}
+ind:hover {
+    border-color: rgb(49, 28, 49);
+    }
+
+#add{
+    background-color: green;
+}
+
+#del{
+    background-color: red;
+}
+
+#record{
+    font-family: Arial;
+    text-align: center;
+    border-radius: 15%;
+    margin-bottom: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    background-image: repeating-linear-gradient(to right,rgb(70, 70, 113),rgb(113, 33, 33));
+}
+
+th{
+    color: aliceblue;
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
