@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Team Form</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="mname">Manager Name:</label></td>
+                    <td><input type="text" id="mname" name="mname" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="gemail">Group Email:</label></td>
+                    <td><input type="email" id="gemail" name="gemail" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="usr">Server Username:</label></td>
+                    <td><input type="text" pattern="(?=.\d)(?=[a-z])(?=.*[A-Z])(?=.*[0-9])" id="usr" name="usr" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="pswd">Server Password:</label></td>
+                    <td><input type="password" id="pswd" name="pswd" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="cnf">Confirm Password:</label></td>
+                    <td><input type="password" id="cnf" name="cnf" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="tl">Team Lead:</label></td>
+                    <td><select name="tl" id="tl">
+                        <option value="Leader Pg1">Leader Pg1</option>
+                        <option value="Leader Pg2">Leader Pg2</option>
+                        <option value="Leader Pg3">Leader Pg3</option>
+                        <option value="Leader Pg4">Leader Pg4</option>
+                    </select></td>
+                  </tr>
+                  </table>
+           <br>    
+            <div class="drop_"
+            ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            <p id="Tony" ondragstart="dragstartHandler(event)" draggable="true">
+            Tony</p>
+            <p id="Bruce" ondragstart="dragstartHandler(event)" draggable="true">
+                Bruce</p>
+            <p id="Thor" ondragstart="dragstartHandler(event)" draggable="true">
+                    Thor</p>
+            <p id="Natasha" ondragstart="dragstartHandler(event)" draggable="true">
+                    Natasha</p>
+            <p id="Clint" ondragstart="dragstartHandler(event)" draggable="true">
+                 Clint</p>
+            <p id="Steve" ondragstart="dragstartHandler(event)" draggable="true">
+                    Steve</p>
+            </div>
+
+            <div class="drop_" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            </div>
+
+            <input type="submit" value="Submit" onclick="validate()">
+        </form>
+    </body>
+</html>
